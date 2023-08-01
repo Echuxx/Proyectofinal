@@ -1,0 +1,206 @@
+/* En este archivo escriban su CSS */
+
+/* Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Comforter&family=Lato:wght@400;700&family=Lilita+One&display=swap');
+
+
+
+
+
+/* Aquí les dejamos como ayuda este "reset" en el cual ajustamos algunas propiedades
+*  cuyos valores asigna por defecto el navegador.
+*/
+
+/* Reset */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    /* Para que el scrolleo en la one page sea suave */
+    scroll-behavior: smooth;
+    
+}
+
+
+/* Este max-width es para que el contenido no se "estire" demasiado hacia los costados y
+*  el margin: auto; para tenerlo centrado fácilmente ;)
+*/
+main {
+    max-width: 1200px;
+    margin: auto;
+    background-color: #722323;
+    
+}
+
+#header {
+
+    height: 90px;
+    position: fixed;
+        
+    
+    
+}
+
+/* personalizacion del menu de cabecera */
+
+.flex-container {
+    display:flex;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #2498f7e3;
+    
+  }
+
+  .flex-item {
+    
+	padding: 15px 0 0 20px;
+	text-decoration: none;
+}
+
+  nav a{
+
+    float: left;
+	padding: 15px 0 0 20px;
+	text-decoration: none;
+    font-size:20px;
+    } 
+    nav li{
+        display: inline;
+        color:#fff;
+        line-height: 5; 
+        color:#944646;
+    }
+
+/* primer texto */
+
+#nombre {
+   
+    line-height: 3;
+    text-align: center;
+    font-family: lato;
+    font-size: 36px;
+}
+
+p {
+
+    font-family: lato;
+    color: rgb(10, 10, 10);
+    text-align: center;
+    line-height: 1.2 ;
+    font-size: 18px;
+    padding-block-end: 20px;
+    
+}
+
+/* Imagen del Gatito */
+#gatito {
+    padding-top: 150px;
+    justify-content: space-around;
+        
+    
+}
+
+.gatito-redondo {
+    border-radius: 6%;
+    
+      
+}
+
+
+/* Boton para descargar el cv */
+
+#boton {
+    padding-top: 50px;
+    text-align: center;
+    padding-block-end: 200px;
+        
+    }
+.btn-cv {
+
+    font-size: 20px;
+    border: 1px solid #2498f78e; 
+    padding: 10px; 
+    background-color: #2498f78e; 
+    color: #fbfbfb; 
+    text-decoration:double; 
+    border-radius: 50px; 
+    
+}
+
+/* edicion de seccion contacto */
+
+
+#hablemos {
+    display: flexbox;
+    line-height: 1.2;
+    background-color: #2498f78e;
+    padding: 6px;
+    text-align: center;
+    margin: 60px;
+    border-radius: 10px;
+    font-size: 28px;
+    font-family: lato;
+        
+}
+
+.menu2 {
+
+    display: flex;
+    justify-content: center;
+   
+    
+} 
+
+
+#titulo-footer {
+    line-height: 90px;
+    color: #fbfbfb;
+    text-align: center;
+}
+
+#footer {
+    height: 90px;
+    background-color: #2498f78e;
+
+}
+
+li a {text-decoration : none; color : #2d2f31;}
+
+
+nav {
+  width : 20px; 
+  background: #d9d9d9;
+  margin : 40px auto; 
+}
+
+span {
+  padding : 30px;
+  background : #2d2f31; 
+  color : white;
+  font-size : 1.2em;
+  font-variant:small-caps;
+  cursor :pointer;
+  display:flexbox;
+}
+
+span::after {
+  float: right;
+  right: 10%;
+  content: "+";
+}
+
+.slide {
+  clear:both;
+  width:100%;
+  height:0px;
+  overflow: hidden;
+  text-align:justify;
+  transition: height .4s ease;
+}
+
+.slide li {padding : 30px;}
+
+#touch {position:absolute; opacity: 0; height: 0px;}    
+
+#touch:checked + .slide {height: 300px;} 
